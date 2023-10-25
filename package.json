@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "api:serve": "nx run api:serve"
+    "api:serve": "nx run api:serve",
+    "api:build": "nx run api:build:production"
   },
   "private": true,
   "dependencies": {
