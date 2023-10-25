@@ -8,6 +8,9 @@
 - [nx.dev](https://nx.dev/)
   - monorepo 관리 tool
 
+- IaC
+  - terraform
+  
 - [LocalStack](https://localstack.cloud/)
   - IaaS to Locally 
 
