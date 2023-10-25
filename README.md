@@ -13,6 +13,7 @@
   
 - [LocalStack](https://localstack.cloud/)
   - IaaS to Locally 
+  - RDS 같은 경우 pro 에서만 제공되기 때문에 `docker-compose` 대체
 
 - Backend
   - [Nestjs](https://nestjs.com/)
