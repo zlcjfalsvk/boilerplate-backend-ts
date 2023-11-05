@@ -2,6 +2,10 @@
 
 보일러 플레이트 만들면서 개인 공부 프로젝트
 
+- 간단한 웹 서버 생성
+- Container 기반의 서비스 IaC 작성
+- Serverless 기반의 IaC 작성
+
 # Skills
 
 - Node v18
