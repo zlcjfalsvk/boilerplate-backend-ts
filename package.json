@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "api:serve": "nx run api:serve"
+    "api:serve": "nx run api:serve",
+    "api:build": "nx run api:build:production",
+    "tf:apply:dev": "cd .iac && terraform apply -auto-approve -var-file=\"dev.tfvars\""
   },
   "private": true,
   "dependencies": {

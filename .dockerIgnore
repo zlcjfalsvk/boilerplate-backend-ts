@@ -1,0 +1,7 @@
+.idea
+.iac
+.vscode
+.git
+
+dist
+node_modules
