@@ -1,7 +1,4 @@
 import { Test, TestingModule } from '@nestjs/testing';
-
-import { UserServiceModule } from '@boilerplate-backend-ts/backend';
-
 import { UsersController } from './users.controller';
 
 describe('UsersController', () => {
@@ -9,7 +6,6 @@ describe('UsersController', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      imports: [UserServiceModule],
       controllers: [UsersController],
     }).compile();
 
