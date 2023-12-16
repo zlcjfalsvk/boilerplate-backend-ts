@@ -3,10 +3,20 @@ version: '3.8'
 services:
 
   # db
-  mysql:
-    image: mysql:8.1
-    ports:
-      - 3306:3306
-    environment:
-      TZ: UTC
-      MYSQL_ROOT_PASSWORD: cheolmin_choi
+#  mysql:
+#    image: mysql:8.1
+#    ports:
+#      - 3306:3306
+#    environment:
+#      TZ: UTC
+#      MYSQL_ROOT_PASSWORD: cheolcheol
+
+  postgresql:
+      image: postgres:16
+#      volumes:
+#        - postgre:/var/lib/postgresql/data
+      ports:
+        - 5432:5432
+      environment:
+        TZ: UTC
+        POSTGRES_PASSWORD: cheolcheol
