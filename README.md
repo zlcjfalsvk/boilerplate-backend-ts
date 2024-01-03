@@ -47,3 +47,11 @@
   - nx.json 에서 generatePackageJson 옵션을 `trun-on` 후 zip 파일로 압축 후 lambda layer 에 포함 시켜야 할 듯
   - nx 가 아니라 nestjs 만 사용한다면 custom webpack 이 가능함
   
+
+---
+
+# Study
+- Prisma
+  - TypeOrm 사용 하면서 Prisma 동시 사용 연습
+    - 기존 TypeOrm 사용 시 Prisma 에서 migration 기능 제공
+  - 실제 DB 의 fk 관계가 아닌 TypeOrm 만의 Relation 일 경우 (fk key 가 아닌 index 로 설정) prisma 에서는? 
