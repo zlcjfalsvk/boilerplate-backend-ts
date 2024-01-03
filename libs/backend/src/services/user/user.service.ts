@@ -1,19 +1,15 @@
 import { Injectable } from '@nestjs/common';
 
 import { UserDtoInterface } from '@boilerplate-backend-ts/common';
+
 import { UserDto } from '../../dtos';
+import { UserRepositoryService } from '../../repositories';
 
 @Injectable()
 export class UserService {
-  getUsers(): UserDtoInterface[] {
-    return [
-      UserDto.of({
-        id: '1',
-        name: 'cheolcheol',
-        email: 'zl6863vk@gmail.com',
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      }),
-    ];
+  constructor(private readonly userRepositoryService: UserRepositoryService) {}
+  async getUsers(): Promise<UserDtoInterface[]> {
+    const userEntities = await this.userRepositoryService.find();
+    return userEntities.map((i) => UserDto.of(i));
   }
 }

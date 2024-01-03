@@ -40,6 +40,9 @@ Thumbs.db
 
 .nx/cache
 
+### Config Files
+.env
+
 
 ### Terraform template
 # Local .terraform directories
