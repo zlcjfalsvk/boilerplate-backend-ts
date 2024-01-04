@@ -80,3 +80,7 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+# Prisma ORM
+prisma
+!prisma/schema.prisma
+!prisma/migrations
