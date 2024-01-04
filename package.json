@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "api:serve": "nx run api:serve",
-    "api:build": "nx run api:build:production",
+    "api:serve": "npx prisma generate && nx run api:serve",
+    "api:build": "npx prisma generate && nx run api:build:production",
     "tf:apply:dev": "cd .iac && terraform apply -auto-approve -var-file=\"dev.tfvars\""
   },
   "private": true,
