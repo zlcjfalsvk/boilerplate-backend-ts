@@ -55,3 +55,4 @@
   - TypeOrm 사용 하면서 Prisma 동시 사용 연습
     - 기존 TypeOrm 사용 시 Prisma 에서 migration 기능 제공
   - 실제 DB 의 fk 관계가 아닌 TypeOrm 만의 Relation 일 경우 (fk key 가 아닌 index 로 설정) prisma 에서는? 
+  - mongodb 를 연결하기 위해선 mongodb 가 replica set 구성이 되어 있어야 함
